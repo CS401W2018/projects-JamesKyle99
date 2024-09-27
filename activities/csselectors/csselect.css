@@ -19,3 +19,6 @@ main .green {
 .dark {
     background-color: bisque;
 }
+.bigger{
+    font: 100;
+}
