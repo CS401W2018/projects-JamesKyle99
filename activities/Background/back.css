@@ -1,0 +1,22 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: sandybrown;
+    background-color: burlywood;
+    background-image: url(blue.jpg);
+}
+
+.current {
+    color:beige
+}
+
+header {
+    background:url(bart.png);
+    background-position: top right;
+}
+
+.normal {
+    color:black;
+}
+.list {
+    list-style-image: url();
+}
