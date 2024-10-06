@@ -1,0 +1,16 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color:khaki ;
+    background-image: url(bcod.jpg);
+    background-color: darkgreen;
+
+}
+
+.current{
+    color:beige;
+}
+
+nav a{
+    color:black;
+    
+}
