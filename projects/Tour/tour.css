@@ -1,9 +1,12 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    color:khaki ;
+    color:azure ;
     background-image: url(sugarcane.jpg);
     background-color: darkgreen;
 
+}
+header{
+  background: url(mask.png) top right no-repeat;
 }
 
 .current{
@@ -13,4 +16,7 @@ body{
 nav a{
     color:black;
     
+}
+.list{
+    list-style-image:url(bullet.png);
 }
