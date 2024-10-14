@@ -1,0 +1,60 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(ave.jpg);
+}
+
+header {
+    
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px 20px 20px 20px;
+    
+}
+
+header h1 {
+    margin-bottom:0;
+    margin-left:100px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+}
+nav a {
+    display: inline;
+    background-color:saddlebrown
+    ;
+    color:white;
+    border-bottom: thin solid green;
+    padding: 10px 20px;
+    
+}
+#avengepic{
+    width:250px;
+    border:thin solid green;
+   position:relative;
+
+    right:20px;
+   bottom: 20px;
+   float: left;
+
+}
+
+
+
+nav a:hover {
+    color:bisque;
+    background-color: white;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: thin solid black;
+    color: white;
+}
