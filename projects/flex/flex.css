@@ -6,7 +6,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color:cornsilk;
     padding: 10px 20px;
 }
