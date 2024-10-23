@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.card {
+    width: 250px;
+    border: thin solid green;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+    margin: 10px 0;
+}
+
+.card img {
+    width: 100%;
+}            
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: none;
+}
+
+nav a{
+    display: block;
+    padding:10px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
