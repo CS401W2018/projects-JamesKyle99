@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bg.jpg);
+
+}
+
+.movies {
+    margin: 10px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  
+
+}
+
+
+.movies td, .movies th ,.movies tr{
+    border: thin solid black;
+    padding: 10px;
+}
+
+.movies tbody tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+
+.movies thead{
+background-color:cadetblue;
+font-weight: bolder;
+}
+aside{
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid;
+    margin: 5px auto;
+}   
+
+.container {
+    display: flex;
+}
+
+nav{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    padding:10px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
