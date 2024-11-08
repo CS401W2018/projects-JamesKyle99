@@ -13,33 +13,46 @@
     </nav>
     <main>
         <form action="processing.html" method="post">
-            First name: <input type="text" name="first" placeholder="First Name" required><br>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="first" placeholder="FIrst Name" required>
+                </div>
 
-            Last name: <input type="text" name="last" placeholder="Last Name"><br>
+                <div class="form-row">
+                    <label for="lname">Last name: </label> 
+                    <input type="text" name="last" placeholder="Last Name">
+                </div>
 
-            Password: <input type="password" name="pass" placeholder="Password"> <br>
-
-            <br>
-            Input date: <input type="date" name="date"> <br>
-            Choose Range: <input type="range"> <br>
-            <input type="checkbox" name="remember" checked> Remember me <br>
-           Choose Color:  <input type="color"> <br>
-            <input type="file"><br>
-
-            <input type="radio" name="class" value="freshman" > Freshman <br>
-            <input type="radio" name="class" value="Sophomore" required> Sophomore <br>
-            <input type="radio" name="class" value="Junior"> Junior <br>
-            <input type="radio" name="class" value="Senior"> Senior <br>
-            Comments: <textarea name="comments"></textarea>
-            State: <select name="State">
-                <option value="Blank"></option>
-                <option value="hi">Hawaii</option>
-                <option value="ca">California</option>
-                <option value="co">Colorado</option>
-
-
-            </select> <br>
-            <input type="submit" name="submit"> <br>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="check-row">
+                    <div  class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked> 
+                        Remember me 
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    Class:
+                    <label><input type="radio" name="class" value="freshman" >Freshman</label>
+                    <label><input type="radio" name="class" value="Sophomore" required> Sophomore</label> 
+                    <label><input type="radio" name="class" value="Junior"> Junior</label>
+                    <label><input type="radio" name="class" value="Senior"> Senior</label>
+                </div>
+                <div class="form-row">
+                <label for="Comments">Commments</label> 
+                <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" name="submit">
+                </div>
+            </fieldset>
 
 
 
@@ -47,12 +60,10 @@
 
         </form>
         <hr>
-        <p>The form tag has an "action" attribute. What does it do?</p>
-        <p>= The action attribute defines the action to be performed when the form is submitted</p>
-        <p>The form tag has a "method" attribute. What does it do?</p>
-        <p>=reads the page off the server </p>
-        <p>What is the difference between a "POST" and a "GET"?</p>
-        <p>= Get request helps you read something on a page, post request adds info or change info in the server</p>
+       <p>What are different ways to style your form?</p>
+       <p>= By playing with CSS using the different tags</p>
+       <p>Why does the professor like to use flex?</p>
+       <p>= Because it helps adjust the screen for phone users </p>
     </main>
     <footer>
         <p>&copy;2024 James Illorin</p>
