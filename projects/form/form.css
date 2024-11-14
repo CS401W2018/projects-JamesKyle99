@@ -40,7 +40,7 @@ legend{
 }
 
 .form-row input, .form-row select, .form-row textarea {
-    flex: 2;
+    flex: 1;
     padding: 10px;
     border-radius: 10px;
     border: 1px;

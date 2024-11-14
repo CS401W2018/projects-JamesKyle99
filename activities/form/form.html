@@ -12,13 +12,13 @@
 
     </nav>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
 
                 <div class="form-row">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <input type="text" id="username" name="username" placeholder="Enter your username" >
                 </div>
 
                 <div class="form-row">
@@ -33,7 +33,7 @@
 
                 <div class="form-row">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
                 </div>
 
                 <div class="form-row">
@@ -50,7 +50,7 @@
                     <div class="spacer"></div>
                     Class:
                     <label><input type="radio" name="class" value="Male" >Male</label>
-                    <label><input type="radio" name="class" value="Female" required> Female</label> 
+                    <label><input type="radio" name="class" value="Female" > Female</label> 
                     <label><input type="radio" name="class" value="Other"> Other</label>
                 </div>
                     <div class="form-row">
@@ -74,18 +74,41 @@
                     <input type="submit" name="submit">
                 </div>
 
-                
             </fieldset>
-
-
-
-
-
+            <p>What is JavaScript? How did it get its name?</p>
+            <p>= Netscape changed the name to JavaScript so they could position it as a companion for the Java language</p>
+            <p>What are the two ways you can run JavaScript?</p>
+            <p>= In a browser and in a server</p>
+            <p>What was the most popular front-end js library?</p>
+            <p>= React, Jquery,Vue</p>
+            <p>What is the most popular front-end js library today?</p>
+            <p>= React</p>
         </form>
 
     </main>
     <footer>
         <p>&copy;2024 James Illorin</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            if(!username || !email){
+            alert("You need a username and an email!!!");
+            return
+            }
+
+            const formData = {
+                username: username,
+                emailAddress:email,
+            }
+
+            console.log(formData);
+            alert("Form Submitted");
+
+        })
+    </script>
 </body>
+
 </html>
