@@ -12,6 +12,7 @@
 
     </nav>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
@@ -75,40 +76,18 @@
                 </div>
 
             </fieldset>
-            <p>What is JavaScript? How did it get its name?</p>
-            <p>= Netscape changed the name to JavaScript so they could position it as a companion for the Java language</p>
-            <p>What are the two ways you can run JavaScript?</p>
-            <p>= In a browser and in a server</p>
-            <p>What was the most popular front-end js library?</p>
-            <p>= React, Jquery,Vue</p>
-            <p>What is the most popular front-end js library today?</p>
-            <p>= React</p>
-        </form>
+            <p>What is AJAX?</p>
+            <p>= Out of order, asynchonous. AJAX allows web pages to update without reloading the entire page</p>
+            <p>Why do you put your JS Code in a separate file?</p>
+            <p>= It makes it easier for the code to read and maintain</p>
+            
 
     </main>
     <footer>
         <p>&copy;2024 James Illorin</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event){
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-            if(!username || !email){
-            alert("You need a username and an email!!!");
-            return
-            }
-
-            const formData = {
-                username: username,
-                emailAddress:email,
-            }
-
-            console.log(formData);
-            alert("Form Submitted");
-
-        })
-    </script>
+    <script src="form.js"> </script>
+    
 </body>
 
 </html>
