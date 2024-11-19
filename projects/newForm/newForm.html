@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="newForm.css">
+</head>
+<body>
+    <header><H1>Sign-up Form</H1></header>
+    <nav>
+
+    </nav>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+
+                <div class="form-row">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" >
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-row">
+
+                </div>
+                <div class="check-row">
+                    <div  class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked> 
+                        Remember me 
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    Class:
+                    <label><input type="radio" name="class" value="Male" >Male</label>
+                    <label><input type="radio" name="class" value="Female" > Female</label> 
+                    <label><input type="radio" name="class" value="Other"> Other</label>
+                </div>
+                    <div class="form-row">
+                    <label for="Comments">Commments</label> 
+                    <textarea name="comments" id="Comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">United States</option>
+                        <option value="canada">Philippines</option>
+                        <option value="uk">Japan</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" name="submit">
+                </div>
+
+            </fieldset>
+           
+            
+
+    </main>
+    <footer>
+        <p>&copy;2024 James Illorin</p>
+    </footer>
+    <script src="newForm.js"> </script>
+    
+</body>
+
+</html>
