@@ -195,7 +195,7 @@ td {
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em;
+    margin:0 auto
     width: 80%;
     max-width: 800px;
     text-align: center;
