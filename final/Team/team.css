@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    
+
+}
+
+header h1 {
+    margin:0;
+    padding: 15px;
+}
+
+header {
+    background-color:brown;
+    text-align: left;
+    color:white;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    padding:10px 5px;
+    color:brown;    
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.mission .pic {
+    flex: 1;
+    max-width: 45%;
+}
+
+.mission .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.mission .text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 15px;
+}
+
+.current {
+    color:coral;
+}
+
+.cards {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cards img{
+    border-radius: 10%;
+    width: 200px;
+    height: 160px;
+    margin-bottom: 10px; 
+}
+
+.profile {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 30px;
+}
+
+main{
+    flex: 3;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+aside{
+    padding: 30px;
+    border-right: 2px solid;
+}
+
+fieldset {
+    background-image: url(otherbg.jpg);
+    box-shadow: 3px 3px 10px rgba(2,20,20,1);
+    color:black;
+    border-radius: 8px;                                                                          
+    margin-top: 30px;
+}
+
+legend{
+    background-color:white;
+    color:black;
+    padding: 5px;
+    border: thin solid black;
+    border-radius: 10px;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+  
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    flex: 2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+  
+}
+                                                              
+.form-row label {
+    width: 150px;
+    text-align: right;
+    
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+    
+}
+input[type="submit"] {
+    background-color:cornflowerblue;
+    color: black;
+    padding: 5px;
+}
+input:not([type="submit"]):focus {
+    padding: 10px;
+    font-size: 1.2em;
+    border:0;
+}
+input:not([type="submit"]):focus {
+    background-color:bisque;
+}
+
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    background-color:lightgoldenrodyellow;
+    font-size: 1.1em;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 1em;
+}
+
+/* Styling for question */
+.question {
+    font-weight: bold;
+}
+
+/* Styling for answer */
+.answer {
+    color: #555;
+}
+
+.intro {
+    background-color:aliceblue;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.intro p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+@media only screen and (max-width: 650px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav a{
+            border-bottom: thin solid black;
+            padding-left: 25px;
+        }
+
+        .form-row, .check-row {
+            flex-direction: column;
+        }
+        .form-row label, .spacer {
+            text-align: left;
+        }
+    
+        input[type="submit"] {
+            background-color:cornflowerblue;
+            color: black;
+            padding: 5px;
+        }
+
+       
+    
+    }
+        
+        
+
+
+
+  

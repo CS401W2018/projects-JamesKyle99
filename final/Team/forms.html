@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <header>
+        <h1>Client Services</h1>
+    </header>
+    <nav>
+        <a href="team.html" class="current">Home</a>
+        <a href="members.html">Our Team</a>
+        <a href="#">Services</a>
+        <a href="#">FAQs</a>
+        <a href="forms.html" class="current">Forms</a>
+    </nav>
+    <main>
+        <h1>Submit a form for help</h1>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Fill-up Form</legend>
+
+                <div class="form-row">
+                <label for="username">Requestor:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" >
+                </div>
+
+                
+                <div class="form-row">
+                    <label for="age">Department:</label>
+                    <input type="text" name="age" id="age" placeholder="Name of department">
+                </div>
+
+                <div class="form-row">
+                    <label for="dob">Phone Number:</label>
+                    <input type="text" id="dob" name="dob">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-row">
+                    <label for="email">When can we visit:</label>
+                    <input type="datetime-local" id="time" name="email">
+                </div>
+
+
+                </div>
+                    <div class="form-row">
+                    <label for="Comments">Concern/Issues</label> 
+                    <textarea name="comments" id="Comments"></textarea>
+                </div>
+
+               
+               
+
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" name="submit">
+                </div>
+
+            </fieldset>
+           
+            
+
+    </main>
+    <footer>
+        <p>&copy;2024 James Illorin</p>
+    </footer>
+    <script src="newForm.js"> </script>
+    
+</body>
+
+</html>
