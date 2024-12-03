@@ -81,6 +81,12 @@ nav a:hover {
     margin-bottom: 10px; 
 }
 
+.card img {
+    width: 1000px;
+    height: 1000px;
+   
+}
+
 .profile {
     display:grid;
     grid-template-columns:1fr 1fr 1fr ;
@@ -171,7 +177,7 @@ th, td {
 }
 
 th {
-    background-color:lightgoldenrodyellow;
+    background-color:firebrick;
     font-size: 1.1em;
 }
 
@@ -180,12 +186,10 @@ td {
     font-size: 1em;
 }
 
-/* Styling for question */
 .question {
     font-weight: bold;
 }
 
-/* Styling for answer */
 .answer {
     color: #555;
 }
@@ -195,11 +199,12 @@ td {
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin:0 auto
+    margin-bottom: 2em;
     width: 80%;
     max-width: 800px;
     text-align: center;
     font-size: 1.1em;
+
 }
 
 .intro p {
@@ -207,6 +212,39 @@ td {
     line-height: 1.6;
 }
 
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color:aliceblue ;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+ul li:hover {
+    background-color:bisque;
+   
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:black;
+    color: whitesmoke;
+    border-radius: 8px;
+}
 
 @media only screen and (max-width: 650px) {
         nav {
