@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Client Services</h1>
+        <h1>Client Services & Relations</h1>
     </header>
     <nav>
         <a href="team.html" class="current">Home</a>
@@ -16,28 +16,32 @@
         <a href="services.html">Services</a>
         <a href="FAQs.html">FAQs</a>
         <a href="forms.html" class="current">Forms</a>
+        <a href="about.html">About</a>
     </nav>
     <main>
-        <h1>Submit a form for help</h1>
+        <h1>Submit a Form for Assistance</h1>
+        <p>
+            Welcome to our ticket system! This form allows you to submit a request for support or report any technical concerns you may have. By providing the necessary details, our team will be able to review and address your issue promptly, ensuring a quick resolution to your problem.
+        </p>
         <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Fill-up Form</legend>
 
                 <div class="form-row">
-                <label for="username">Requestor:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" >
+                <label for="Requestor">Requestor:</label>
+                <input type="text" id="Requestor" name="Requestor" placeholder="Enter your username" >
                 </div>
 
                 
                 <div class="form-row">
-                    <label for="age">Department:</label>
-                    <input type="text" name="age" id="age" placeholder="Name of department">
+                    <label for="Dep">Department:</label>
+                    <input type="text" name="Dep" id="Dep" placeholder="Name of department">
                 </div>
 
                 <div class="form-row">
-                    <label for="dob">Phone Number:</label>
-                    <input type="text" id="dob" name="dob">
+                    <label for="num">Phone Number:</label>
+                    <input type="text" id="num" name="num">
                 </div>
 
                 <div class="form-row">
@@ -45,20 +49,16 @@
                     <input type="email" id="email" name="email" placeholder="Enter your email">
                 </div>
                 <div class="form-row">
-                    <label for="email">When can we visit:</label>
-                    <input type="datetime-local" id="time" name="email">
+                    <label for="time">When can we visit:</label>
+                    <input type="datetime-local" id="time" name="time">
                 </div>
 
 
+                
+                <div class="form-row">
+                <label for="Comments">Concern/Issues</label> 
+                <textarea name="Comments" id="Comments"></textarea>
                 </div>
-                    <div class="form-row">
-                    <label for="Comments">Concern/Issues</label> 
-                    <textarea name="comments" id="Comments"></textarea>
-                </div>
-
-               
-               
-
 
                 <div class="form-row">
                     <div class="spacer"></div>
@@ -66,12 +66,10 @@
                 </div>
 
             </fieldset>
-           
-            
-
+        </form> 
     </main>
     <footer>
-        <p>&copy;2024 James Illorin</p>
+        <p>&copy; 2024 IT Operations Department. All rights reserved.</p>
     </footer>
     <script src="newForm.js"> </script>
     
